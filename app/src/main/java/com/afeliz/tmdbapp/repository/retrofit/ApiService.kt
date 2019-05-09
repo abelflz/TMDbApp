@@ -1,4 +1,4 @@
-package com.afeliz.tmdbapp.repository
+package com.afeliz.tmdbapp.repository.retrofit
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

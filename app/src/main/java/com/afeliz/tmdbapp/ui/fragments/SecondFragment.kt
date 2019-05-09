@@ -1,4 +1,4 @@
-package com.afeliz.tmdbapp.ui
+package com.afeliz.tmdbapp.ui.fragments
 
 import android.content.Intent
 import android.net.Uri
@@ -11,8 +11,8 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.afeliz.tmdbapp.R
-import com.afeliz.tmdbapp.repository.ApiService
-import com.afeliz.tmdbapp.repository.MovieResult
+import com.afeliz.tmdbapp.repository.retrofit.ApiService
+import com.afeliz.tmdbapp.repository.retrofit.MovieResult
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

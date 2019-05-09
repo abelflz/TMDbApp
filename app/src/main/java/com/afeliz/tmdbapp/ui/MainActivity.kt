@@ -4,8 +4,10 @@ import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
 import com.afeliz.tmdbapp.ui.interfaces.FragmentListener
 import com.afeliz.tmdbapp.R
-import com.afeliz.tmdbapp.base.showFragment
-import com.afeliz.tmdbapp.base.showFragmentBackStack
+import com.afeliz.tmdbapp.showFragment
+import com.afeliz.tmdbapp.showFragmentBackStack
+import com.afeliz.tmdbapp.ui.fragments.MainFragment
+import com.afeliz.tmdbapp.ui.fragments.SecondFragment
 
 class MainActivity : FragmentActivity(), FragmentListener {
     override fun onCreate(savedInstanceState: Bundle?) {

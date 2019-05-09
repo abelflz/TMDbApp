@@ -1,4 +1,4 @@
-package com.afeliz.tmdbapp.ui
+package com.afeliz.tmdbapp.ui.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -11,8 +11,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.afeliz.tmdbapp.ui.interfaces.FragmentListener
 import com.afeliz.tmdbapp.R
-import com.afeliz.tmdbapp.repository.ApiService
-import com.afeliz.tmdbapp.repository.Movies
+import com.afeliz.tmdbapp.repository.retrofit.ApiService
+import com.afeliz.tmdbapp.repository.retrofit.Movies
+import com.afeliz.tmdbapp.ui.adapters.RecyclerAdapter
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -21,12 +22,12 @@ class MainFragment : Fragment() {
 
     lateinit var listener: FragmentListener
 
-    override fun onAttach(context: Context?) {
+    override fun onAttach(context: Context) {
         super.onAttach(context)
         try{
             listener = context as FragmentListener
         }catch (e: ClassCastException){
-            throw ClassCastException(context?.toString()+" must implement Listener")
+            throw ClassCastException(context.toString()+" must implement Listener")
         }
     }
 
